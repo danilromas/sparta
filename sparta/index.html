@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spartan Shield Token</title>
+    <style>
+        @font-face {
+            font-family: 'Oldtimer';
+            src: url('./Oldtimer-GOPpg.ttf') format('woff2'),
+                 url('./Oldtimer-GOPpg.ttf') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+        body {
+            margin: 0;
+            font-family: 'Oldtimer', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+        .header, .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header img {
+            max-width: 200px; /* Задайте максимальную ширину логотипа */
+            height: auto;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 20px;
+            position: relative;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            animation: slideIn 1s;
+            text-align: left; /* Выравнивание текста слева */
+            flex: 1; /* Растягиваем overlay на всю доступную ширину */
+            margin: 0 20px; /* Добавляем небольшие отступы между контейнерами */
+            display: flex;
+            flex-direction: column; /* Отображаем элементы по вертикали */
+            align-items: center; /* Центрируем элементы по горизонтали */
+            justify-content: center; /* Центрируем элементы по вертикали */
+        }
+        @keyframes slideIn {
+            from { transform: translateY(100px); }
+            to { transform: translateY(0); }
+        }
+        .container:nth-of-type(2) {
+            background-image: url('2.jpeg'); /* Поправлен путь к изображению */
+        }
+        .container:nth-of-type(3) {
+            background-image: url('1.jpg'); /* Поправлен путь к изображению */
+        }
+        .container:nth-of-type(4) {
+            background-image: url('2.jpg'); /* Поправлен путь к изображению */
+        }
+        h2 {
+            color: #ffdd57;
+            text-align: center; /* Выравниваем заголовок по центру */
+            margin-top: 0; /* Убираем верхний отступ у заголовка */
+        }
+        .spartan {
+            font-weight: bold;
+            color: #ff5722;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px auto; /* Центрируем кнопку по горизонтали */
+            background-color: #ff5722;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            animation: buttonBounce 1s infinite alternate;
+        }
+        @keyframes buttonBounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
+        .button:hover {
+            background-color: #ff7043;
+        }
+        .footer p {
+            margin: 0;
+        }
+        .ad {
+            position: absolute;
+            width: 100%;
+            background-color: #ff5722;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            animation: scroll 10s linear infinite;
+        }
+        .ad.top {
+            top: 0;
+        }
+        .ad.bottom {
+            bottom: 0;
+        }
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .text-container {
+            flex: 1; /* Растягиваем текстовый контейнер на всю оставшуюся ширину */
+            padding: 0 20px; /* Добавляем внутренние отступы для текста */
+            text-align: left; /* Выравниваем текст по левому краю */
+            margin-top: 20px; /* Добавляем отступ сверху текста */
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="./coin.png" alt="Spartan Shield Token Logo">
+    </div>
+    <div class="container">
+        <div class="overlay">
+            <div class="image-container">
+                <img src="leoon.jpg" alt="Sparta">
+            </div>
+            <h2><img src="./leon.png" alt="Spartan Shield Token Logo"></h2>
+            <p>Когда-то давно жил могучий спартанец по имени <span class="spartan">Леон</span>. Он был настолько силен и храбр, что его провозгласили королем Спарты. Леон часами сидел на своем золотом троне, размышляя о том, как укрепить свою армию.</p>
+        </div>
+        <div class="ad top">BUY $SST BUY $SST BUY $SST BUY $SST</div>
+        <div class="ad top">BUY $SST BUY $SST BUY $SST BUY $SST</div>
+    </div>
+    <div class="container">
+        <div class="overlay">
+            <h2><img src="./logo1.png" alt="Spartan Shield Token Logo"></h2>
+            <p>В тот же день Леон решил создать свой виртуальный токен, который он назвал "Spartan Shield Token". Он хотел, чтобы этот токен символизировал силу и стойкость спартанцев. Каждый раз, когда кто-то покупал его токен, Леон лично подписывал его с сообщением: "Remember, the strength of the phalanx lies in the shield of each warrior."</p>
+            <div class="image-container">
+            </div>
+        </div>
+        <div class="ad top">BUY $SST BUY $SST BUY $SST BUY $SST</div>
+        <div class="ad top">BUY $SST BUY $SST BUY $SST BUY $SST</div>
+    </div>
+    <div class="container">
+        <div class="overlay">
+            <h2>Создание токена</h2>
+            <p>Таким образом, Леон смог объединить свою любовь к спартанским щитам и виртуальным токенам, создав что-то уникальное и запоминающееся. Его токен быстро стал популярен среди спартанцев и других воинов, которые ценят силу и стойкость.</p>
+            <div class="image-container">
+            </div>
+            <div class="image-container">
+                <img src="mem3.jpg" alt="Sparta">
+            </div>
+            <a href="#" class="button">Купить Spartan Shield Token</a>
+        </div>
+        <div class="ad top">BUY $SST BUY $SST BUY $SST BUY $SST</div>
+        <div class="ad top">BUY $SST BUY $SST BUY $SST BUY $SST</div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 Spartan Shield Token</p>
+    </div>
+</body>
+</html>
