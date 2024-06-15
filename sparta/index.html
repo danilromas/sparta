@@ -75,6 +75,9 @@
         .container:nth-of-type(4) {
             background-image: url('2.jpg'); /* Поправлен путь к изображению */
         }
+        .container:nth-of-type(5) {
+            background-image: url('2.jpg'); /* Поправлен путь к изображению */
+        }
         h2 {
             color: #ffdd57;
             text-align: center; /* Выравниваем заголовок по центру */
@@ -136,11 +139,41 @@
             text-align: left; /* Выравниваем текст по левому краю */
             margin-top: 20px; /* Добавляем отступ сверху текста */
         }
+        .memes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('./1.jpg'); /* Фон для блока */
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.meme {
+    text-align: center;
+    flex-basis: calc(50% - 40px); /* Ширина для верхних мемов */
+    margin-bottom: 20px;
+}
+
+.meme img {
+    width: 100%; /* Ширина картинки */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.top-meme {
+    margin-right: 20px; /* Отступ между верхними мемами */
+}
+
+.bottom-meme {
+    flex-basis: 100%; /* Ширина для нижнего мема */
+    margin-right: 0; /* Убираем отступ справа для нижнего мема */
+}
     </style>
 </head>
 <body>
     <div class="header">
-        <img src="./coin.png" alt="Spartan Shield Token Logo">
+        <img src="./coin1.png" alt="Spartan Shield Token Logo">
     </div>
     <div class="container">
         <div class="overlay">
@@ -148,24 +181,33 @@
                 <img src="leoon.jpg" alt="Sparta">
             </div>
             <h2><img src="./leon.png" alt="Spartan Shield Token Logo"></h2>
-            <p>Когда-то давно жил могучий спартанец по имени <span class="spartan">Леон</span>. Он был настолько силен и храбр, что его провозгласили королем Спарты. Леон часами сидел на своем золотом троне, размышляя о том, как укрепить свою армию.</p>
+            <p>Once upon a time there lived a mighty Spartan whose name was Leon. He was so strong and brave that they acclaimed him King of Sparta. Leon sat on his throne for hours, pondering over how to strengthen his army and earn some shekels. One day, as Leonid Abramovich was sitting on his throne, one of his soldiers came to him and said, ‘And I dare say, my good sir, we do defeat all our enemies on the battlefield, but all of us are still poor, no one even has pants.’ King Leonid put his thinking cap on... and then a voice spoke from heaven saying, </p>
+            <h2>$SST</h2>
+            <p>King Leon grasped the divine omen... After that, the Spartans moved to the warm lands bordering the Mediterranean, closer to cocktails and palm trees, to the splendid city of Haifa.</p> 
         </div>
         <div class="ad top">BUY $SST BUY $SST BUY $SST BUY $SST</div>
         <div class="ad top">BUY $SST BUY $SST BUY $SST BUY $SST</div>
     </div>
-    <div class="container">
-        <div class="overlay">
-            <h2><img src="./logo1.png" alt="Spartan Shield Token Logo"></h2>
-            <p>В тот же день Леон решил создать свой виртуальный токен, который он назвал "Spartan Shield Token". Он хотел, чтобы этот токен символизировал силу и стойкость спартанцев. Каждый раз, когда кто-то покупал его токен, Леон лично подписывал его с сообщением: "Remember, the strength of the phalanx lies in the shield of each warrior."</p>
-            <div class="image-container">
-            </div>
+    
+    <div class="memes-container">
+        <div class="meme top-meme">
+            <img src="mem1.png" alt="Meme 1">
+            <p>This is Moisha. Moisha bought $SST on Pump and held them to sell on Raydium. How wise Moisha was to do it. 
+                And this is Fima. He sold tokens early on and now he has only one way out.</p>
         </div>
-        <div class="ad top">BUY $SST BUY $SST BUY $SST BUY $SST</div>
-        <div class="ad top">BUY $SST BUY $SST BUY $SST BUY $SST</div>
+        <div class="meme top-meme">
+            <img src="mem2.jpg" alt="Meme 2">
+            <p><span>This is Sava and Abram. They sniped $SST and sold them to the other Spartans before listing.</p>
+        </div>
+        <div class="meme bottom-meme">
+            <img src="mem4.jpg" alt="Meme 3">
+            <p>This is David. He didn’t buy $SST at all.</p>
+        </div>
     </div>
+
     <div class="container">
         <div class="overlay">
-            <h2>Создание токена</h2>
+            <h2><img src="logo1.png"></h2>
             <p>Таким образом, Леон смог объединить свою любовь к спартанским щитам и виртуальным токенам, создав что-то уникальное и запоминающееся. Его токен быстро стал популярен среди спартанцев и других воинов, которые ценят силу и стойкость.</p>
             <div class="image-container">
             </div>
